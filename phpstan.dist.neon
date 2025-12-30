@@ -1,0 +1,14 @@
+parameters:
+    level: max
+    paths:
+        - src
+    excludePaths:
+        - test/resources/*
+    errorFormat: table
+    editorUrl: 'vscode://file/%%file%%:%%line%%'
+    treatPhpDocTypesAsCertain: false
+    checkUninitializedProperties: true
+    rememberPossiblyImpureFunctionValues: false
+    checkBenevolentUnionTypes: true
+    reportPossiblyNonexistentGeneralArrayOffset: true
+    reportPossiblyNonexistentConstantArrayOffset: true

@@ -1,0 +1,84 @@
+{
+    "name": "haeckel/basic-bcmath-calculator",
+    "description": "Implementing basic decimal calculator with bcmath",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^12.5",
+        "phpstan/phpstan": "^2.1",
+        "phpmd/phpmd": "^2.15",
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "license": "LGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Haeckel\\BasicBcmathCalculator\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-bcmath": "*",
+        "haeckel/basic-decimal-arithmetic": "dev-main",
+        "haeckel/type_wrapper": "^2.0"
+    },
+    "scripts": {
+        "test": [
+            "@putenv XDEBUG_MODE=coverage",
+            "vendor/bin/phpunit"
+        ],
+        "dbg-test": [
+            "@putenv XDEBUG_MODE=coverage,debug",
+            "@putenv XDEBUG_SESSION=1",
+            "vendor/bin/phpunit"
+        ],
+         "testSilent": [
+            "@putenv XDEBUG_MODE=coverage",
+            "vendor/bin/phpunit --no-output 2> /dev/null"
+        ],
+        "phpstan": [
+            "vendor/bin/phpstan"
+        ],
+        "cs": [
+            "vendor/bin/phpcs src/"
+        ],
+        "cbf": [
+            "vendor/bin/phpcbf src/"
+        ],
+        "phpmd": [
+            "vendor/bin/phpmd src/ github phpmd.xml"
+        ],
+        "phpmd-local": [
+            "vendor/bin/phpmd src/ text phpmd.xml --cache"
+        ],
+        "ci": [
+            "@cbf -q",
+            "@cs -q",
+            "@phpmd",
+            "@phpstan -q",
+            "@test --no-output"
+        ],
+        "local-ci": [
+            "@cbf",
+            "@cs",
+            "@phpmd-local",
+            "@phpstan --no-progress",
+            "@local-test"
+        ],
+        "local-test": [
+            "@test --coverage-html .phpunit/html-coverage"
+        ]
+    },
+    "archive": {
+        "exclude": [
+            "test/",
+            "phpcs.xml.dist",
+            "phpstan.dist.neon",
+            "phpunit.xml",
+            ".gitignore",
+            ".githooks",
+            ".github"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
