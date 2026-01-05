@@ -40,7 +40,7 @@ jobs:
       with:
         php-version: ${{ env.PHP_VERSION }}
         coverage: xdebug
-        extensions: none, ctype, curl, dom, json, libxml, mbstring, pdo, phar, tokenizer, xml, xmlwriter, SimpleXML
+        extensions: none, ctype, curl, dom, json, libxml, mbstring, pdo, phar, tokenizer, xml, xmlwriter, SimpleXML, bcmath
         ini-values: zend.assertions=1, error_reporting=-1, log_errors_max_len=0, display_errors=On
         tools: none
 
