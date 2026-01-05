@@ -34,7 +34,7 @@
         ],
          "testSilent": [
             "@putenv XDEBUG_MODE=coverage",
-            "vendor/bin/phpunit --no-output 2> /dev/null"
+            "vendor/bin/phpunit --no-output"
         ],
         "phpstan": [
             "vendor/bin/phpstan"
