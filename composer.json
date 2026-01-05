@@ -52,7 +52,7 @@
             "@cs -q",
             "@phpmd",
             "@phpstan -q",
-            "@test --no-results --no-progress"
+            "@test --no-progress"
         ],
         "local-ci": [
             "@cbf",
