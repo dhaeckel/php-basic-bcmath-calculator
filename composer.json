@@ -6,7 +6,8 @@
         "phpmd/phpmd": "^2.15",
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^10.0",
-        "squizlabs/php_codesniffer": "^4.0"
+        "squizlabs/php_codesniffer": "^4.0",
+        "symfony/var-exporter": "^6.0"
     },
     "license": "LGPL-3.0-or-later",
     "autoload": {
