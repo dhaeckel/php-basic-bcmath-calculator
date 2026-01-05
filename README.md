@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/dhaeckel/php-basic-bcmath-calculator/graph/badge.svg?token=9UZRI73ELY)](https://codecov.io/gh/dhaeckel/php-basic-bcmath-calculator)
+[![ci](https://github.com/dhaeckel/php-basic-bcmath-calculator/actions/workflows/php.yml/badge.svg)](https://github.com/dhaeckel/php-basic-bcmath-calculator/actions/workflows/php.yml)
 [![Static Badge](https://img.shields.io/badge/PHPStan-level%20max-brightgreen)
 ](phpstan.dist.neon)
 ![Static Badge](https://img.shields.io/badge/PHPStan-strict_rules-brightgreen)
