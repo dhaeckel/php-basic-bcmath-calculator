@@ -122,7 +122,11 @@ class Calculator implements CalculatorInterface
         $secondLastDigit = (
             $strlen > 1 ? (int) $withoutDecimalPoint[$strlen - 2] : 0
         );
-        /** @var numeric-string&non-falsy-string $addValue */
+
+        /**
+         * @phpcs:ignore Generic.Files.LineLength.TooLong
+         * @var numeric-string&literal-string&lowercase-string&non-falsy-string&uppercase-string $addValue
+         */
         $addValue = '0.' . \str_repeat('0', $this->scale) . '5';
 
         $rounded = match ($this->roundingMode) {

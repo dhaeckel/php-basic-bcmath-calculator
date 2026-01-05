@@ -4,10 +4,14 @@
     "type": "library",
     "require-dev": {
         "phpmd/phpmd": "^2.15",
+        "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-strict-rules": "^2.0",
         "phpunit/phpunit": "^10.0",
         "squizlabs/php_codesniffer": "^4.0",
         "symfony/config": "^6.0",
+        "symfony/dependency-injection": "^6.0",
+        "symfony/filesystem": "^6.0",
         "symfony/var-exporter": "^6.0"
     },
     "license": "LGPL-3.0-or-later",
@@ -77,6 +81,9 @@
         ]
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
     }
 }
