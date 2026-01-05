@@ -3,9 +3,9 @@
     "description": "Implementing basic decimal calculator with bcmath",
     "type": "library",
     "require-dev": {
-        "phpunit/phpunit": "^12.5",
-        "phpstan/phpstan": "^2.1",
         "phpmd/phpmd": "^2.15",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^10.0",
         "squizlabs/php_codesniffer": "^4.0"
     },
     "license": "LGPL-3.0-or-later",

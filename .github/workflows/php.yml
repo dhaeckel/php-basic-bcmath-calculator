@@ -9,6 +9,9 @@ on:
 permissions:
   contents: read
 
+env:
+  PHP_VERSION: '8.1'
+
 jobs:
   build:
 
