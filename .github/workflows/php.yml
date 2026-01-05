@@ -56,7 +56,7 @@ jobs:
         files: ./.phpunit/junit.xml
 
     - name: Upload code coverage data to Codecov.io
-      uses: codecov/codecov-action@v4
+      uses: codecov/codecov-action@v5
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         disable_search: true
